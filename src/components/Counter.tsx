@@ -19,8 +19,8 @@ export function Counter({ queue }: { queue: number[] } ){
           </div>              
         </div>
         <div className="flex flex-col px-5 pb-5 items-center space-y-2" >             
-          <div className="text-2xl font-bold">Counter 1</div>
-          <div>{queue[0]}</div>              
+          <div className="text-2xl font-extrabold">Counter 1</div>
+          <div className="text-xl font-bold">{queue[0]}</div>              
         </div>         
       </div> 
 
@@ -33,8 +33,8 @@ export function Counter({ queue }: { queue: number[] } ){
           </div>              
         </div>
         <div className="flex flex-col px-5 pb-5 items-center space-y-2" >             
-          <div className="text-2xl font-bold">Counter 2</div>
-          <div>{queue[1]}</div>              
+          <div className="text-2xl font-extrabold">Counter 2</div>
+          <div className="text-xl font-bold">{queue[1]}</div>              
         </div>         
       </div>   
 
@@ -48,7 +48,7 @@ export function Counter({ queue }: { queue: number[] } ){
         </div>
         <div className="flex flex-col px-5 pb-5 items-center space-y-2" >             
           <div className="text-2xl font-bold">Counter 3</div>
-          <div>{queue[2]}</div>              
+          <div className="text-xl font-bold">{queue[2]}</div>              
         </div>         
       </div>           
 
@@ -62,7 +62,7 @@ export function Counter({ queue }: { queue: number[] } ){
         </div>
         <div className="flex flex-col px-5 pb-5 items-center space-y-2" >             
           <div className="text-2xl font-bold">Counter 4</div>
-          <div>{queue[3]}</div>              
+          <div className="text-xl font-bold">{queue[3]}</div>              
         </div>         
       </div>                   
 

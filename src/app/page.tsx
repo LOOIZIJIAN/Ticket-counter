@@ -1,4 +1,5 @@
 'use client';
+
 import { Button } from "@/components/ui/button";
 import { FcNext } from "react-icons/fc";
 import Link from "next/link";
@@ -53,8 +54,8 @@ export default function Home() {
       <div className="container mx-auto m-16">
         <div className="flex items-center flex-col rounded border-2 border-sky-600 py-12 tracking-widest">
           <div className="space-y-4">
-            <div className="text-3xl font-extrabold">Now serving: {ticketQueue.length > 0 ? ticketQueue[currentIndex] : "None"}</div>
-            <div className="text-3xl font-extrabold">Last umber: {ticketQueue.length > 1 ? ticketQueue[(currentIndex - 1 + max) % max] : "None"}</div>
+            <div className="text-3xl font-extrabold">Now serving: {ticketQueue.length > 1 ? ticketQueue[(currentIndex - 1 + max) % max] : "None"}</div>
+            <div className="text-3xl font-extrabold">Last number: {ticketQueue.length > 0 ? ticketQueue[currentIndex] : "None"}</div>
           </div>
           <div className="mt-16">
             <Button size="lg" variant="default" onClick={handleTakeNumber}>
